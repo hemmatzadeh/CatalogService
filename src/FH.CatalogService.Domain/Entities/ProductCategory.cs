@@ -8,6 +8,10 @@ namespace FH.CatalogService.Domain.Entities
 {
     public class ProductCategory : BaseEntity
     {
+        public ProductCategory()
+        {
+            ProductCategoryAttributes = new HashSet<ProductCategoryAttribute>();
+        }
         public string Name { get; set; }
 
         public string? Description { get; set; }

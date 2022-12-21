@@ -20,7 +20,7 @@ namespace FH.CatalogService.Application.Dtos
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public IList<ProductCategoryAttributeDto> CategoryAttributes { get; set; }
+        public virtual IList<ProductCategoryAttributeDto> CategoryAttributes { get; set; }
 
         
     }

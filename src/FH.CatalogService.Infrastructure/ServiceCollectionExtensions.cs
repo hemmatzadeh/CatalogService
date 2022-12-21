@@ -12,7 +12,7 @@ namespace FH.CatalogService.Infrastructure
 {
     public static class ServiceCollectionExtensions
     {
-        public static object AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("Default");
             services.AddDbContext<IDatabseContext, DatabaseContext>(options =>

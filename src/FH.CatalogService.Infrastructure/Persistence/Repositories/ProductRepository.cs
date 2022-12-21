@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace FH.CatalogService.Infrastructure.Repositories
 {
-    internal class ProductRepository : GenericRepository<Product>, IProductRepository
+    public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
 
         public ProductRepository(DatabaseContext Context) : base(Context)
