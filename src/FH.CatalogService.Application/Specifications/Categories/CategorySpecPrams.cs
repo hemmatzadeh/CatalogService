@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace FH.CatalogService.Application.Specifications.Categories;
+
+public class CategorySpecPrams
+{
+    private const int MaxPageSize = 50;
+    public int pageIndex { get; set; } = 1;
+    private int _pageSize = 6;
+    public int pageSize
+    {
+        get => _pageSize;
+        set => _pageSize = value > MaxPageSize ? MaxPageSize : value;
+    }
+    public string _search;
+    public string Search
+    {
+        get => _search;
+        set => _search = value.ToLower();
+    }
+
+}
