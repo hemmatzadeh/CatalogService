@@ -1,14 +1,5 @@
 # CatalogService
 
-## Functionalities:
-
--  [x] Integrating to 2 rate providers : [CurrencyLayer]( https://currencylayer.com/ ) and [ApiLayer-Currency-data]( https://apilayer.com/marketplace/currency_data-api)
-
-- [x] Retaining information abount currency exchange trades carried out by its clients in database
-- [x] When an exchange rate is used, it cached and if not older than 30 minutes it used again in other exchanges (30 minutes is configurable in appSettings.json)
-- [x] Limiting each client to 10 currency exchange trades per hour ( number 10, is configurable in appSettings.json)
-
----
 
 ## Technics and Technologies
 
